@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Note to Thelma</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('WhatsApp Image 2024-03-18 at 04.15.41.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .message-box {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.5s ease;
+            position: relative;
+            top: 20vh; /* Adjusts the initial position of the message box */
+            text-align: center;
+        }
+
+        .message-box:hover {
+            background: rgba(255, 20, 147, 0.5); /* Soft pink */
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff69b4;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff1493;
+        }
+
+        p {
+            display: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="message-box">
+    <h1>Dear Thelma,</h1>
+    <button onclick="showMessage()">Open My Heart</button>
+    <p id="message">When I say I love you, I mean every part of you. You're my little wonder, and I just want to protect you, always. Your eyes, so charming and captivating, give me goosebumps. I dream of chomping on your lips all day and feeling the heat of our body all night. Though our memories are few to cherish and our paths will soon part, my heart will always be yours. This is how I truly feel, Thelma. I'll always love you.</p>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById('message').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
